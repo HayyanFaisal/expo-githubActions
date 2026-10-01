@@ -1,5 +1,5 @@
 import * as Device from 'expo-device';
-import { Platform, StyleSheet } from 'react-native';
+import { Platform, StyleSheet, View, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AnimatedIcon } from '@/components/animated-icon';
@@ -37,6 +37,15 @@ export default function HomeScreen() {
           <ThemedText type="title" style={styles.title}>
             Welcome to&nbsp;Expo
           </ThemedText>
+          <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+            <Text style={{ fontFamily: 'Times New Roman', fontSize: 20 }}>
+              HAYYAN FAISAL
+            </Text>
+
+            <Text style={{ fontFamily: 'Times New Roman', fontSize: 16 }}>
+              23F-3108
+            </Text>
+          </View>
         </ThemedView>
 
         <ThemedText type="code" style={styles.code}>
