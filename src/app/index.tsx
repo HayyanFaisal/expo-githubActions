@@ -1,5 +1,6 @@
 import { FlatList, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useEffect } from 'react';
 
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
@@ -203,6 +204,10 @@ function ListHeader() {
     </View>
   );
 }
+//Error :)
+useEffect(() => {
+  setSomeState(true);
+}, []);
 
 export default function HomeScreen() {
   return (
